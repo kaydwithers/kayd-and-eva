@@ -1,7 +1,7 @@
 export const OurStory = () => {
   return (
-    <div className="mb-32">
-      <h2 className="text-2xl">Our story</h2>
+    <div className="">
+      <h2 className="text-2xl mb-32">Our story</h2>
 
       <div className="flex flex-col gap-y-8">
         <p>
