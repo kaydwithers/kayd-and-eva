@@ -1,9 +1,9 @@
 export const OurStory = () => {
   return (
     <div className="mb-32">
-      <h2>Our story</h2>
+      <h2 className="text-2xl">Our story</h2>
 
-      <div className="">
+      <div className="flex flex-col gap-y-8">
         <p>
           Eva and Kayd would like to thank each of you for being here today.
           It’s an honour to have you here. As two introverts, they chose to keep
@@ -64,8 +64,10 @@ export const OurStory = () => {
           with you.
         </p>
 
-        <p>With love,</p>
-        <p>Eva & Kayd</p>
+        <div className="">
+          <p>With love,</p>
+          <p>Eva & Kayd</p>
+        </div>
       </div>
     </div>
   );

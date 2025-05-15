@@ -1,7 +1,7 @@
 export const Seating = () => {
   return (
     <div className="flex flex-col gap-y-48">
-      <h2>Seating</h2>
+      <h2 className="text-2xl">Seating</h2>
 
       <div className="">
         <div className="grid grid-cols-10 text-center">
