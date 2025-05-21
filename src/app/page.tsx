@@ -1,4 +1,6 @@
+import { Menu } from "./components/Menu/Menu";
 import { OurStory } from "./components/OurStory/OurStory";
+import { Photos } from "./components/Photos/Photos";
 import { Seating } from "./components/Seating/Seating";
 
 export default function Home() {
@@ -8,6 +10,10 @@ export default function Home() {
         <h1 className="text-4xl">Kayd and Eva</h1>
 
         <OurStory />
+
+        <Photos />
+
+        <Menu />
 
         <Seating />
       </div>
