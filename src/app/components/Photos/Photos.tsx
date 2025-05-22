@@ -20,11 +20,16 @@ export const Photos = () => {
 
       <div className="flex flex-col gap-y-48">
         <ul className="flex">
-          <li className="p-24">
-            <button onClick={() => handlePress(TABS.PHOTOS)}>Photos</button>
+          <li>
+            <button className="p-24" onClick={() => handlePress(TABS.PHOTOS)}>
+              Photos
+            </button>
           </li>
-          <li className="p-24">
-            <button onClick={() => handlePress(TABS.PHOTOBOOTH)}>
+          <li>
+            <button
+              className="p-24"
+              onClick={() => handlePress(TABS.PHOTOBOOTH)}
+            >
               Photobooth
             </button>
           </li>
