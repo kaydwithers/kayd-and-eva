@@ -14,7 +14,7 @@ export const LeaveMessageForm = () => {
     e.preventDefault();
     setStatus("sending");
 
-    const res = await fetch("/api/leave-message", {
+    const res = await fetch("/api/send/route", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, message }),
