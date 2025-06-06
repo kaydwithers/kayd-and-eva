@@ -2,11 +2,23 @@
 
 import { useState } from "react";
 import { Heading } from "../Heading/Heading";
+import { Tabs } from "../Tabs/Tabs";
 
 const TABS = {
   PHOTOS: "photos",
   PHOTOBOOTH: "photobooth",
 };
+
+const tabs = [
+  {
+    id: TABS.PHOTOS,
+    label: "Photos",
+  },
+  {
+    id: TABS.PHOTOBOOTH,
+    label: "Photobooth",
+  },
+];
 
 export const Photos = () => {
   const [activeTab, setActiveTab] = useState(TABS.PHOTOS);
@@ -20,33 +32,7 @@ export const Photos = () => {
       <Heading>Photos</Heading>
 
       <div className="flex flex-col gap-y-12">
-        <ul className="flex">
-          <li>
-            <button
-              className={`py-4 px-6 border-b ${
-                activeTab === TABS.PHOTOS
-                  ? "border-white"
-                  : "border-transparent"
-              }`}
-              onClick={() => handlePress(TABS.PHOTOS)}
-            >
-              Photos
-            </button>
-          </li>
-
-          <li>
-            <button
-              className={`py-4 px-6 border-b ${
-                activeTab === TABS.PHOTOBOOTH
-                  ? "border-white"
-                  : "border-transparent"
-              }`}
-              onClick={() => handlePress(TABS.PHOTOBOOTH)}
-            >
-              Photobooth
-            </button>
-          </li>
-        </ul>
+        <Tabs activeTab={activeTab} tabs={tabs} onPress={handlePress} />
 
         <div className="">
           {activeTab === TABS.PHOTOS && (
@@ -57,20 +43,23 @@ export const Photos = () => {
               </p>
             </div>
           )}
+
           {activeTab === TABS.PHOTOBOOTH && (
             <div>
-              <p className="mb-6">Instructions</p>
+              <h4 className="text-lg font-semibold mb-4">Instructions</h4>
 
               <ul className="list-decimal pl-6 flex flex-col gap-y-4">
                 <li>
-                  With the supplied camera, use the camera app to take a photo.
+                  With the supplied camera, use the <strong>Camera</strong> app
+                  to take a photo.
                 </li>
                 <li>
-                  When you are happy with your photo, open the Link WIDE app.
+                  When you are happy with your photo, open the{" "}
+                  <strong>Link WIDE</strong> app.
                 </li>
                 <li>
                   In the Link WIDE app, select <strong>Simple Print</strong>,
-                  choose your photo, and press the print button.
+                  choose your photo, and press the print icon.
                 </li>
                 <li>
                   If the printer runs out of paper, you can try replacing the
