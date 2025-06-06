@@ -31,15 +31,16 @@ export const OurStory = () => {
         </p>
         <p>
           Not long after, in July 2022, Kayd welcomed a Shih Tzu puppy into his
-          life—one that his cousin Flynn named Cookie. Eva had been campaigning
+          life—one that his nephew Flynn named Cookie. Eva had been campaigning
           for a Shih Tzu for some time, and while Kayd was originally a pug
           enthusiast, he grew to like them. Cookie became an important part of
           their lives. Kayd and Eva used to go to the movies a lot and out for
-          dinners. But then Cookie came along and they preferred quiet nights at
-          home hanging out with her. They had a new family member and started to
-          understand what it might be like to have a child. Sadly Cookie could
-          not be in the room with us today but she would have liked a pat from
-          each of you.
+          dinners. But then Cookie came along and they felt bad every time they
+          left her home alone. They preferred quiet nights at home hanging out
+          with her. They had a new family member and started to understand what
+          it might be like to have a child. Sadly Cookie was not allowed to be
+          in the room with us today but she would have liked a pat from
+          everyone.
         </p>
         <p>
           Eventually, Kayd moved to Geelong to be closer to Eva. A little while
