@@ -1,0 +1,24 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  // This tells Prisma to use the connection string from your .env file
+  // or the environment variables you set in Vercel.
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL")
+}
+
+// This defines the structure of your guestbook entries.
+model Guestbook {
+  id        Int      @id @default(autoincrement())
+  name      String
+  message   String
+  createdAt DateTime @default(now()) @map("created_at")
+
+  // This maps the model to the 'guestbook' table in your database.
+  @@map("guestbook")
+}

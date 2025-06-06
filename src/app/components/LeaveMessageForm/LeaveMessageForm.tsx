@@ -4,28 +4,41 @@ import { useState } from "react";
 import { Heading } from "../Heading/Heading";
 
 export const LeaveMessageForm = () => {
-  const [email, setName] = useState("");
+  const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
-    "idle"
-  );
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus("sending");
+    setSubmitting(true);
+    setError(null);
 
-    const res = await fetch("/api/send/route", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, message }),
-    });
+    if (!name || !message) {
+      setError("Name and message are required.");
+      setSubmitting(false);
+      return;
+    }
 
-    if (res.ok) {
-      setStatus("sent");
+    try {
+      const response = await fetch("/api/guestbook", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, message }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit message.");
+      }
+
       setName("");
       setMessage("");
-    } else {
-      setStatus("error");
+    } catch (err: any) {
+      setError(err.message);
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -38,7 +51,7 @@ export const LeaveMessageForm = () => {
           type="text"
           placeholder="Your name"
           required
-          value={email}
+          value={name}
           onChange={(e) => setName(e.target.value)}
           className="border p-4 w-full"
         />
@@ -55,16 +68,12 @@ export const LeaveMessageForm = () => {
         <button
           type="submit"
           className="font-semibold bg-white text-black px-6 py-4 rounded"
-          disabled={status === "sending"}
+          disabled={submitting}
         >
-          {status === "sending" ? "Sending..." : "Send Message"}
+          {submitting ? "Sending..." : "Send message"}
         </button>
 
-        {status === "sent" && <p className="text-green-400">Message sent!</p>}
-
-        {status === "error" && (
-          <p className="text-red-400">Error sending message.</p>
-        )}
+        {error && <p className="text-red-400">Error sending message.</p>}
       </form>
     </div>
   );

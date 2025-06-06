@@ -1,4 +1,5 @@
-// import { LeaveMessageForm } from "./components/LeaveMessageForm/LeaveMessageForm";
+import { GuestbookEntries } from "./components/MessageEntries/MessageEntries";
+import { LeaveMessageForm } from "./components/LeaveMessageForm/LeaveMessageForm";
 import { Location } from "./components/Location/Location";
 import { Menu } from "./components/Menu/Menu";
 import { OurStory } from "./components/OurStory/OurStory";
@@ -15,7 +16,9 @@ export default function Home() {
 
         <Photos />
 
-        {/* <LeaveMessageForm /> */}
+        <LeaveMessageForm />
+
+        <GuestbookEntries />
 
         <Location />
 
