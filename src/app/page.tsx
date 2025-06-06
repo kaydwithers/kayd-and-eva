@@ -15,7 +15,7 @@ export default function Home() {
 
         <Photos />
 
-        <LeaveMessageForm />
+        {/* <LeaveMessageForm /> */}
 
         <Location />
 
