@@ -1,4 +1,4 @@
-import { LeaveMessageForm } from "./components/LeaveMessageForm/LeaveMessageForm";
+// import { LeaveMessageForm } from "./components/LeaveMessageForm/LeaveMessageForm";
 import { Location } from "./components/Location/Location";
 import { Menu } from "./components/Menu/Menu";
 import { OurStory } from "./components/OurStory/OurStory";
