@@ -20,7 +20,7 @@ export const Location = () => {
       <div className="">
         <h4 className="text-lg font-semibold mb-4">Parking</h4>
 
-        <p className="mb-2">Parking is available at the following locations:</p>
+        <p className="mb-4">Parking is available at the following locations:</p>
 
         <ul className="list-disc flex flex-col gap-y-2 pl-6">
           <li>Moor St,</li>
