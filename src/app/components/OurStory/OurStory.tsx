@@ -1,7 +1,9 @@
+import { Heading } from "../Heading/Heading";
+
 export const OurStory = () => {
   return (
     <div className="">
-      <h2 className="text-2xl mb-32">Our story</h2>
+      <Heading>Our story</Heading>
 
       <div className="flex flex-col gap-y-8">
         <p>
