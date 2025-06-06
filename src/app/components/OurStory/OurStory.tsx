@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Heading } from "../Heading/Heading";
 
 export const OurStory = () => {
@@ -69,6 +70,21 @@ export const OurStory = () => {
         <div className="">
           <p>With love,</p>
           <p>Eva & Kayd</p>
+        </div>
+      </div>
+
+      <div className="flex gap-x-4 mt-8">
+        <div className="fex">
+          <Image
+            src="/images/cookie.jpg"
+            alt="Cookie"
+            width={500}
+            height={300}
+          />
+        </div>
+
+        <div className="">
+          <Image src="/images/chloe.jpg" alt="Chloe" width={300} height={500} />
         </div>
       </div>
     </div>
