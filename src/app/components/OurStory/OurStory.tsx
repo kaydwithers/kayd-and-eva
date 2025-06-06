@@ -9,9 +9,9 @@ export const OurStory = () => {
       <div className="flex flex-col gap-y-8">
         <p>
           Eva and Kayd would like to thank each of you for being here today.
-          It’s an honour to have you here. As two introverts, they chose to keep
-          their wedding small and personal. If you’re here, it’s because you
-          hold a very special place in their lives.
+          It’s an honour to have you here. They chose to keep their wedding
+          small and personal. If you’re here, it’s because you hold a very
+          special place in their lives.
         </p>
         <p>
           Eva and Kayd didn’t meet at church (as they sometimes like to joke),
@@ -21,13 +21,20 @@ export const OurStory = () => {
           South Melbourne. When Kayd saw Eva he couldn’t believe his luck.
         </p>
         <p>
-          Kayd was nervous and knew of a couple of “cool” places to go for
-          dinner. All the cool places Kayd knew were full and the two wandered
-          the city together. Eva had never walked so much and was mindful of her
-          departing SkyBus. Eva pointed to a modest Chinese restaurant and said,
-          “Let’s just go here.” It may not have looked special from the outside,
-          but it became just that—they spent the evening talking and laughing,
-          mostly about dogs.
+          Kayd was nervous and knew of a couple of interesting places to go for
+          dinner. All the interesting places Kayd knew were full and the two
+          wandered the city together. As they walked it started raining. Kayd
+          pulled an umbrella out of his backpack. Eva thought Kayd was someone
+          that was prepared for any situation. However, her observation was
+          wrong. Eva had never walked so much and was mindful of her departing
+          SkyBus. Eva pointed to a modest Chinese restaurant and said, “Let’s
+          just go here.” It may not have looked special from the outside, but it
+          became just that—they spent the evening talking and laughing, mostly
+          about dogs. Eva eventually got on the SkyBus. However, the bus
+          wouldn’t leave. Eva and Kayd kept waving to each other. Kayd tried to
+          be romantic by waiting for the bus to depart. They kept waving at each
+          other for around 10 minutes. Eva thought it was awkward. From that
+          encounter Eva realised that Kayd was a good person.
         </p>
         <p>
           Not long after, in July 2022, Kayd welcomed a Shih Tzu puppy into his
@@ -44,13 +51,12 @@ export const OurStory = () => {
         </p>
         <p>
           Eventually, Kayd moved to Geelong to be closer to Eva. A little while
-          later Chloe arrived. Eva and Kayd did think they were a bit too old
-          for kids but it turned out that wasn’t true. Eva put Kayd under a lot
-          of pressure to get married. Kayd didn’t like the idea of marriage,
-          mostly because he did not want to throw a big wedding party and be in
-          front of 100’s of people that his parents would have invited.
-          Eventually Kayd realised that Eva is very special to him and decided
-          to propose.
+          later Chloe arrived. Eva and Kayd did think they were too old for
+          children. However, it turned out that wasn’t true. Kayd didn’t like
+          the idea of getting married, mostly because he did not want to
+          organise a big wedding reception and be in front of 100’s of people
+          that his parents would have invited. Eventually Kayd realised that Eva
+          is very special to him and decided to propose.
         </p>
         <p>
           Kayd proposed to Eva on their favourite Anglesea beach on January 28th
