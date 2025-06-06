@@ -1,4 +1,4 @@
-import { GuestbookEntries } from "./components/MessageEntries/MessageEntries";
+// import { GuestbookEntries } from "./components/MessageEntries/MessageEntries";
 import { LeaveMessageForm } from "./components/LeaveMessageForm/LeaveMessageForm";
 import { Location } from "./components/Location/Location";
 import { Menu } from "./components/Menu/Menu";
@@ -18,7 +18,7 @@ export default function Home() {
 
         <LeaveMessageForm />
 
-        <GuestbookEntries />
+        {/* <GuestbookEntries /> */}
 
         <Location />
 
