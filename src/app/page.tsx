@@ -1,3 +1,4 @@
+import { LeaveMessageForm } from "./components/LeaveMessageForm/LeaveMessageForm";
 import { Location } from "./components/Location/Location";
 import { Menu } from "./components/Menu/Menu";
 import { OurStory } from "./components/OurStory/OurStory";
@@ -13,6 +14,8 @@ export default function Home() {
         <OurStory />
 
         <Photos />
+
+        <LeaveMessageForm />
 
         <Location />
 
