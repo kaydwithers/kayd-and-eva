@@ -52,8 +52,8 @@ export const Photos = () => {
           {activeTab === TABS.PHOTOS && (
             <div>
               <p>
-                Check back soon—we’ll upload wedding photos here once they’re
-                ready.
+                Check back soon—we&apos;ll upload wedding photos here once
+                they&apos;re ready.
               </p>
             </div>
           )}
@@ -74,8 +74,8 @@ export const Photos = () => {
                 </li>
                 <li>
                   If the printer runs out of paper, you can try replacing the
-                  film roll. If it's too tricky, feel free to ask Kayd or Eva
-                  for help.
+                  film roll. If it&apos;s too tricky, feel free to ask Kayd or
+                  Eva for help.
                 </li>
               </ul>
             </div>
