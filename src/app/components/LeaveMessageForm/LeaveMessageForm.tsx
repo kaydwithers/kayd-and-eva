@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Heading } from "../Heading/Heading";
 
 export const LeaveMessageForm = () => {
-  const [email, setEmail] = useState("");
+  const [email, setName] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle"
@@ -22,7 +22,7 @@ export const LeaveMessageForm = () => {
 
     if (res.ok) {
       setStatus("sent");
-      setEmail("");
+      setName("");
       setMessage("");
     } else {
       setStatus("error");
@@ -35,11 +35,11 @@ export const LeaveMessageForm = () => {
 
       <form onSubmit={handleSubmit} className="space-y-6 max-w-xl">
         <input
-          type="email"
-          placeholder="Your email"
+          type="text"
+          placeholder="Your name"
           required
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setName(e.target.value)}
           className="border p-4 w-full"
         />
 
