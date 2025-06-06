@@ -105,9 +105,9 @@ export const Menu = () => {
                 <h4 className="text-lg font-semibold mb-4">White Wine</h4>
                 <ul className="list-disc pl-6 flex flex-col gap-y-4">
                   <li>
-                    2023, Crabtree ‘Watervale’, Riesling, Clare Valley, SA 2021,
+                    2023, Crabtree ‘Watervale’, Riesling, Clare Valley, SA
                   </li>
-                  <li>Endless, Pinot Grigio, King Valley, VIC</li>
+                  <li>2021, Endless, Pinot Grigio, King Valley, VIC</li>
                 </ul>
               </div>
 
@@ -115,9 +115,9 @@ export const Menu = () => {
                 <h4 className="text-lg font-semibold mb-4">Red Wine</h4>
                 <ul className="list-disc pl-6 flex flex-col gap-y-4">
                   <li>
-                    2022, Trentham Estate, Pinot Noir, Murray Darling, VIC 2021,
+                    2022, Trentham Estate, Pinot Noir, Murray Darling, VIC
                   </li>
-                  <li>Devocion, Malbec, Mendoza, ARG</li>
+                  <li> 2021, Devocion, Malbec, Mendoza, ARG</li>
                 </ul>
               </div>
 
@@ -133,35 +133,30 @@ export const Menu = () => {
               <div>
                 <h4 className="text-lg font-semibold mb-4">Beers</h4>
                 <ul className="list-disc pl-6 flex flex-col gap-y-4">
-                  <li>
-                    Panama Draught, VIC Moondog, “Old Mate”, Pale Ale, VIC
-                    Hawker’s
-                  </li>
-                  <li>
-                    IPA, VIC La Sirene Czech Pilsner, VIC Kaiju Krush, Tropical
-                    Ale,
-                  </li>
-                  <li>VIC Prickly Moses Otway Light Beer</li>
+                  <li>Panama Draught, VIC</li>
+                  <li>Moondog, “Old Mate”, Pale Ale, VIC</li>
+                  <li>Hawker’s IPA, VIC</li>
+                  <li>La Sirene Czech Pilsner, VIC</li>
+                  <li>Kaiju Krush, Tropical Ale, VIC</li>
+                  <li>Prickly Moses Otway Light Beer</li>
                 </ul>
               </div>
 
               <div>
                 <h4 className="text-lg font-semibold mb-4">Ciders</h4>
                 <ul className="list-disc pl-6 flex flex-col gap-y-4">
-                  <li>
-                    Monteith’s Apple Cider, NZ Kaiju Golden Axe Apple Cider, VIC
-                  </li>
+                  <li>Monteith’s Apple Cider, NZ</li>
+                  <li>Kaiju Golden Axe Apple Cider, VIC</li>
                 </ul>
               </div>
 
               <div>
                 <h4 className="text-lg font-semibold mb-4">Non-Alcoholic</h4>
                 <ul className="list-disc pl-6 flex flex-col gap-y-4">
-                  <li>
-                    Plus and Minus Wines: Prosecco, Pinot Grigio, Shiraz Bridge
-                    Road
-                  </li>
-                  <li>Brewers Free Time Pale Ale Sangria ‘G&T’</li>
+                  <li>Plus and Minus Wines: Prosecco, Pinot Grigio, Shiraz</li>
+                  <li>Bridge Road Brewers Free Time Pale Ale</li>
+                  <li>Sangria</li>
+                  <li>‘G&T’</li>
                 </ul>
               </div>
 
@@ -170,7 +165,9 @@ export const Menu = () => {
                   Non-Alcoholic Spirits
                 </h4>
                 <ul className="list-disc pl-6 flex flex-col gap-y-4">
-                  <li>Soft Drinks Juices Tea and Coffee</li>
+                  <li>Soft Drinks</li>
+                  <li>Juices</li>
+                  <li>Tea and Coffee</li>
                 </ul>
               </div>
             </div>
