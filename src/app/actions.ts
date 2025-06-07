@@ -28,8 +28,8 @@ export async function sendEmail(prevState: unknown, formData: FormData) {
   try {
     // FIX: Removed the "const data =" part
     await resend.emails.send({
-      from: "Your Name <you@yourverifieddomain.com>",
-      to: ["your-personal-email@example.com"],
+      from: "Your Name <kayd@kayd-and-eva.com>",
+      to: ["kaydwithers@gmail.com"],
       subject: `New message from ${name}`,
       text: message,
     });
