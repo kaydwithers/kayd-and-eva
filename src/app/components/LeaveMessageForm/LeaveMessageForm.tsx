@@ -16,7 +16,7 @@ export const LeaveMessageForm = () => {
     <div>
       <Heading>Leave a message</Heading>
 
-      <form onSubmit={formAction} className="space-y-6 max-w-xl">
+      <form action={formAction} className="space-y-6 max-w-xl">
         <input
           placeholder="Your name"
           type="text"
