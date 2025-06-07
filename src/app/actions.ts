@@ -28,7 +28,7 @@ export async function sendEmail(prevState: unknown, formData: FormData) {
   try {
     // FIX: Removed the "const data =" part
     await resend.emails.send({
-      from: "Your Name <kayd@kayd-and-eva.com>",
+      from: "Your Name <onboarding@resend.dev>",
       to: ["kaydwithers@gmail.com"],
       subject: `New message from ${name}`,
       text: message,
